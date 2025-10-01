@@ -38,7 +38,7 @@ const Solving: React.FC<NextSectionProps> = ({ id = "after-main" }) => {
           timerRef.current = window.setTimeout(() => {
             setShowPills(true);
             timerRef.current = null;
-          }, 2000);
+          }, 500);
         }
       } else {
         setShowPills(false);
@@ -72,20 +72,30 @@ const Solving: React.FC<NextSectionProps> = ({ id = "after-main" }) => {
 
   // Convert progress to pixels (max spacing)
   const gapPx = Math.round(progress * 40);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const triggerPoint = window.innerHeight * 2;
+      setIsSticky(window.scrollY > triggerPoint);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <section
-      id={id}
-      ref={sectionRef}
-      className="relative min-h-screen overflow-hidden font-mono"
-    >
-      <nav className="flex items-center justify-between p-4 md:p-7 text-2xl font-extrabold">
+    <section id={id} ref={sectionRef} className="min-h-screen font-mono">
+      <nav
+        className={`${
+          isSticky ? "fixed top-0 left-0 right-0" : ""
+        } z-50 bg-white lg:flex items-center justify-between p-4 md:p-7 text-2xl font-extrabold hidden`}
+      >
         <header className="leading-5">
           Pal <br /> Nesto
         </header>
         <header>Works</header>
       </nav>
-
       <div className="flex justify-center pt-32 text-2xl leading-3 font-bold">
         <div
           style={{ rowGap: gapPx }}
@@ -165,8 +175,11 @@ const Solving: React.FC<NextSectionProps> = ({ id = "after-main" }) => {
           <h1 className="text-[clamp(28px,4.2vw,48px)]">Success</h1>
         </div>
       </div>
-
-      <div className="pointer-events-none absolute left-0 right-0 bottom-[-5px] h-[70px] overflow-hidden origin-bottom-right -skew-y-6">
+      <motion.div
+        className="pointer-events-none absolute left-0 right-0 bottom-[-5px] h-[70px] overflow-hidden origin-bottom-right"
+        animate={showPills ? { skewY: 0 } : { skewY: -6 }}
+        transition={{ duration: 3.4 }}
+      >
         <div className="relative h-full bg-[#FFC100]">
           <div className="absolute inset-x-0 h-[64px] overflow-hidden">
             <div className="whitespace-nowrap [animation:marquee_5s_linear_infinite] will-change-transform font-semibold tracking-wider uppercase text-black text-[18px] leading-[64px]">
@@ -174,7 +187,7 @@ const Solving: React.FC<NextSectionProps> = ({ id = "after-main" }) => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

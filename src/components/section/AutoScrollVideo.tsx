@@ -15,7 +15,7 @@ const AutoScrollVideo: React.FC<AutoScrollVideoProps> = ({
   src,
   targetId,
   offset = 0,
-  className = "relative w-screen h-screen overflow-hidden",
+  className = "relative w-screen min-h-screen overflow-hidden mt-8",
   videoClassName = "absolute inset-0 w-full h-full object-cover",
   type = "video/mp4",
   threshold = 0.6,
