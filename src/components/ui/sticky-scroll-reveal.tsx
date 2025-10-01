@@ -47,8 +47,8 @@ export const StickyScroll = ({
   ];
   const linearGradients = [
     "", // cyan-500 to emerald-500
-    "linear-gradient(to bottom right, #ec4899, #6366f1)", // pink-500 to indigo-500
-    "linear-gradient(to bottom right, #f97316, #eab308)", // orange-500 to yellow-500
+    "", // pink-500 to indigo-500
+    "", // orange-500 to yellow-500
   ];
 
   const [backgroundGradient, setBackgroundGradient] = useState(
@@ -114,7 +114,7 @@ export const StickyScroll = ({
                 style={{
                   background: linearGradients[index % linearGradients.length],
                 }}
-                className={cn("h-", contentClassName)}
+                className={cn("", contentClassName)}
               >
                 {item.content}
               </div>

@@ -2,7 +2,7 @@ import { Compare } from "../ui/compare";
 
 export function CompareDemo() {
   return (
-    <div className="flex h-[40vh] w-3/4 items-center justify-center px-1 [perspective:800px] [transform-style:preserve-3d] md:px-8">
+    <div className="flex h-full  w-fullitems-center justify-center px-1 [perspective:800px] [transform-style:preserve-3d] md:px-8">
       <div
         style={{
           transform: "rotateX(15deg) translateZ(80px)",

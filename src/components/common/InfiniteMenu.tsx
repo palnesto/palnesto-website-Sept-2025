@@ -1280,7 +1280,7 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [] }) => {
   };
 
   return (
-    <div className="relative w-full h-full text-white">
+    <div className="relative w-full h-full text-white ">
       <canvas
         id="infinite-grid-menu-canvas"
         ref={canvasRef}
@@ -1294,11 +1294,14 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [] }) => {
           select-none
           absolute
           text-lg
+          lg:text-4xl
+          font-bold
           left-[1.6em]
+          lg:left-1/3
           top-40
           lg:top-1/2
           transform
-          translate-x-[20%]
+          -translate-x-1/3
           -translate-y-1/2
           transition-all
           ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
