@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Benz Grotesk";
+  src: url("/fonts/darker/Benz Grotesk.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.benz-grotesk {
+  font-family: "Benz Grotesk", sans-serif;
+  font-weight: 850;
+  font-style: normal;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.inter-s {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.word-spacing {
+  word-spacing: 0.7rem;
+}
+
+.radial-gradient-purple {
+  background: radial-gradient(
+    circle,
+    rgba(164, 0, 169, 0.6) 20%,
+    rgba(1, 4, 37, 0.3) 60%,
+    rgba(1, 4, 37, 0) 100%
+  );
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  filter: blur(50px);
+}
+
+.radial-gradient-purple2 {
+  background: radial-gradient(
+    circle,
+    rgba(164, 0, 169, 0.6) 20%,
+    rgba(1, 4, 37, 0.3) 60%,
+    rgba(1, 4, 37, 0) 100%
+  );
+  border-radius: 50%;
+  height: 175%;
+  width: 175%;
+  filter: blur(50px);
+}
+
+.scrollbar-x::-webkit-scrollbar {
+  display: none;
+}
+.rounded-full {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 11 */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  pointer-events: none;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+/* bento grid */
