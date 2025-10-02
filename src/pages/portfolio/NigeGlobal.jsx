@@ -4,7 +4,6 @@ import A3 from "../../components/assets/ng3.png";
 import A4 from "../../components/assets/ng4.png";
 import A5 from "../../components/assets/ng5.png";
 import A6 from "../../components/assets/ng6.png";
-import A7 from "../../components/assets/ng7.png";
 import A8 from "../../components/assets/ng8.png";
 import A9 from "../../components/assets/ng9.png";
 import A10 from "../../components/assets/ng10.png";

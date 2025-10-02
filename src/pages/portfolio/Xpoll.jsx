@@ -1,3 +1,8 @@
+import A1 from "../../components/assets/globe.mp4";
+import A2 from "../../components/assets/Vector.png";
+import A3 from "../../components/assets/xpollsketch.png";
+import A4 from "../../components/assets/face.png";
+import A5 from "../../components/assets/xpolllast.jpeg";
 function Xpoll() {
   return (
     <>
@@ -28,7 +33,7 @@ function Xpoll() {
           playsInline
           className="w-full h-full rounded-3xl"
         >
-          <source src="/globe.mp4" type="video/mp4" />
+          <source src={A1} type="video/mp4" />
         </video>
       </div>
       <div className="flex flex-col lg:hidden  lg:flex-row items-center justify-between 2xl:mt-[6rem] lg:mt-[6rem] xl:mt-[6rem] mt-[2rem] mx-[2rem] 2xl:mx-[15rem] lg:mx-[6rem] xl:mx-[8rem]">
@@ -46,7 +51,7 @@ function Xpoll() {
 
       <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:space-x-8 2xl:px-[8rem] lg:mx-[6rem] xl:mx-[8rem] mx-[2rem] mt-[6rem]">
         <figure className="h-[22rem] 2xl:h-auto pb-4 w-full 2xl:w-[40rem]">
-          <img src="/Vector.png" alt="fabreco" className="w-full h-full" />
+          <img src={A2} alt="fabreco" className="w-full h-full" />
         </figure>
 
         <div className="text-[#1C1C1C] font-medium 3xl:space-y-10 2xl:space-y-6 xl:space-y-6 lg:space-y-6 space-y-4">
@@ -65,16 +70,12 @@ function Xpoll() {
         </div>
       </div>
       <div className="mt-[4rem] mx-[2rem] 2xl:mx-[15rem] lg:mt-[8rem] items-center lg:mx-[6rem] xl:mx-[8rem]">
-        <img
-          src="/xpollsketch.png"
-          alt="fabreco"
-          className="w-full h-full rounded-3xl"
-        />
+        <img src={A3} alt="fabreco" className="w-full h-full rounded-3xl" />
       </div>
 
       <div className="flex flex-col lg:flex-row lg:justify-between items-center space-y-10 lg:space-x-10 2xl:px-[8rem] lg:mx-[6rem] xl:mx-[8rem] mx-[2rem] mt-[3rem] lg:mt-[12rem]">
         <img
-          src="/face.png"
+          src={A4}
           alt="fabreco"
           className="lg:w-1/2 w-[70%] h-full rounded-3xl"
         />
@@ -131,14 +132,14 @@ function Xpoll() {
             </p>
           </div>
           <img
-            src="/xpolllast.jpeg"
+            src={A5}
             alt="fabreco"
             className="lg:w-1/2 w-full h-full lg:hidden"
           />
         </div>
 
         <img
-          src="/xpolllast.jpeg"
+          src={A5}
           alt="fabreco"
           className="lg:w-1/2 w-full h-full hidden lg:block"
         />
