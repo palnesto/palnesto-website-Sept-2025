@@ -1,4 +1,4 @@
-import p1 from "../components/assets/A4.png";
+import p1 from "../components/assets/component/assets/A4.png";
 import p2 from "../components/assets/CA-cover.jpg";
 import p3 from "../components/assets/DSGlobal.gif";
 import p4 from "../components/assets/GGpcover.jpg";
