@@ -64,7 +64,7 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="relative flex h-[30rem] justify-center space-x-10 overflow-y-auto rounded-md p-10 font-mono"
+      className="relative flex lg:h-[30rem] justify-center space-y-10 lg:space-x-10 overflow-y-auto rounded-md p-10 font-mono"
       ref={ref}
     >
       <div className="div relative hidden items-start px-4 lg:flex">
@@ -105,7 +105,7 @@ export const StickyScroll = ({
         {content[activeCard].content ?? null}
       </div>
 
-      <div className="relative flex w-full flex-col items-center text-justify gap-10 px-4 lg:hidden">
+      <div className="relative flex w-full flex-col items-center text-justify lg:hidden">
         {content.map((item, index) => (
           <div key={item.title + index} className="flex flex-col gap-6">
             {/* Content card first */}
