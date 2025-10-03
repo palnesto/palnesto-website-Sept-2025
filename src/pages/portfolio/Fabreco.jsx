@@ -1,3 +1,6 @@
+import A1 from "../../components/assets/fabreco-in.png";
+import A2 from "../../components/assets/fabreco-1.jpg";
+import A3 from "../../components/assets/fabreco-2.gif";
 function Fabreco() {
   return (
     <>
@@ -18,7 +21,7 @@ function Fabreco() {
         </p>
       </div>
       <div className="mt-[4rem] mx-[2rem] 2xl:mx-[15rem] items-center lg:mx-[6rem] xl:mx-[8rem]">
-        <img src="/fabreco-in.png" alt="fabreco" className="rounded-3xl" />
+        <img src={A1} alt="fabreco" className="rounded-3xl" />
       </div>
       <div className="flex flex-col lg:flex-row lg:justify-between 2xl:px-[8rem] lg:mx-[6rem] xl:mx-[8rem] mx-[2rem]">
         <div className="text-[#1C1C1C] font-medium mt-[6rem] space-y-10">
@@ -30,9 +33,6 @@ function Fabreco() {
           </h1>
         </div>
       </div>
-      {/* <div>
-        <img src="/samrtintern.jpg" />
-      </div> */}
       <div className="flex flex-col lg:flex-row 2xl:px-[8rem] lg:mx-[6rem] xl:mx-[8rem] mx-[2rem]">
         <div className="text-[#1C1C1C] font-medium mt-[4rem] space-y-10">
           <p className="text-[#1C1C1C] font-bold text-2xl">THE APPROACH</p>
@@ -49,14 +49,6 @@ function Fabreco() {
       <div className="flex flex-col lg:flex-row 2xl:px-[8rem] lg:mx-[6rem] xl:mx-[8rem] mx-[2rem]">
         <div className="text-[#1C1C1C] font-medium mt-[6rem] ">
           <p className="text-[#1C1C1C] font-bold text-2xl">THE SOLUTION</p>
-          {/* <h1 className="mt-8 text-lg">
-            <span className="font-bold">NEED: </span>
-            Fabreco focuses on items that save time and are easy to use. An
-            instant wrinkle remover developed by Fabreco eliminates wrinkles
-            without the need for iron in just a few seconds. It was the goal of
-            the founders to create a brand that connects with people and
-            supports them in their daily lives.
-          </h1> */}
           <h1 className="mt-4 text-lg">
             <span className="font-bold">IMPACT: </span>
             Fabreco focuses on items that save time and are easy to use. An
@@ -70,12 +62,12 @@ function Fabreco() {
 
       <div className="my-[4rem] mx-[2rem] flex flex-col lg:flex-row justify-center items-center lg:space-x-8 lg:px-[20rem] xl:px-[10rem] ">
         <img
-          src="/fabreco-1.jpg"
+          src={A2}
           alt="Approach"
           className="object-cover transition duration-300 ease-in-out hover:scale-95 w-80 h-80"
         />
         <img
-          src="/fabreco-2.gif"
+          src={A3}
           alt="Image 1"
           className="object-cover transition duration-300 ease-in-out hover:scale-95 w-80 h-80"
         />

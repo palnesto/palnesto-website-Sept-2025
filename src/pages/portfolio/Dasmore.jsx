@@ -1,3 +1,8 @@
+import A1 from "../../components/assets/hero.mp4";
+import A2 from "../../components/assets/dasmore.png";
+import A3 from "../../components/assets/filter.jpeg";
+import A4 from "../../components/assets//patfilter.png";
+import A5 from "../../components/assets/dasmorelast.jpeg";
 function Dasmore() {
   return (
     <>
@@ -28,7 +33,7 @@ function Dasmore() {
           playsInline
           className="w-full h-full rounded-3xl"
         >
-          <source src="/hero.mp4" type="video/mp4" />
+          <source src={A1} type="video/mp4" />
         </video>
       </div>
       <div className="flex flex-col lg:hidden  lg:flex-row items-center justify-between 2xl:mt-[6rem] lg:mt-[6rem] xl:mt-[6rem] mt-[2rem] mx-[2rem] 2xl:mx-[15rem] lg:mx-[6rem] xl:mx-[8rem]">
@@ -47,7 +52,7 @@ function Dasmore() {
 
       <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:space-x-8 2xl:px-[8rem] lg:mx-[6rem] xl:mx-[8rem] mx-[2rem] mt-[6rem]">
         <img
-          src="/dasmore.png"
+          src={A2}
           alt="fabreco"
           className="rounded-xl lg:w-1/2 w-full h-full bg-black"
         />
@@ -67,7 +72,7 @@ function Dasmore() {
       </div>
       <div className="mt-[4rem] mx-[2rem] 2xl:mx-[15rem] lg:mx-[6rem] xl:mx-[8rem] flex items-center justify-center">
         <img
-          src="/filter.jpeg"
+          src={A3}
           alt="fabreco"
           className="h-[50rem] rounded-3xl bg-black"
         />
@@ -75,7 +80,7 @@ function Dasmore() {
 
       <div className="flex flex-col lg:flex-row lg:justify-between items-center space-y-10 lg:space-x-10 2xl:px-[8rem] lg:mx-[6rem] xl:mx-[8rem] mx-[2rem] mt-[3rem] lg:mt-[12rem]">
         <img
-          src="/patfilter.png"
+          src={A4}
           alt="fabreco"
           className="lg:w-1/2 w-[70%] h-full rounded-3xl"
         />
@@ -143,13 +148,13 @@ function Dasmore() {
             </p>
           </div>
           <img
-            src="/dasmorelast.jpeg"
+            src={A5}
             alt="fabreco"
             className="lg:w-1/2 w-full h-full lg:hidden"
           />
         </div>
         <img
-          src="/dasmorelast.jpeg"
+          src={A5}
           alt="fabreco"
           className="lg:w-1/2 w-full h-full hidden lg:block"
         />

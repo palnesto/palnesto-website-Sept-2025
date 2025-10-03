@@ -1,3 +1,11 @@
+import A1 from "../../components/assets/card1.png";
+import A2 from "../../components/assets/card2.png";
+import A3 from "../../components/assets/card3.png";
+import A4 from "../../components/assets/card4.png";
+import A5 from "../../components/assets/card5.png";
+import A6 from "../../components/assets/cards.png";
+import A7 from "../../components/assets/card7.png";
+
 function SaitaCard() {
   return (
     <>
@@ -19,11 +27,7 @@ function SaitaCard() {
         </p>
       </div>
       <div className="mt-[4rem] mx-[2rem] 2xl:mx-[15rem]  items-center lg:mx-[6rem] xl:mx-[8rem]">
-        <img
-          src="/card1.png"
-          alt="fabreco"
-          className="w-full h-full rounded-3xl"
-        />
+        <img src={A1} alt="fabreco" className="w-full h-full rounded-3xl" />
       </div>
       <div className="flex flex-col lg:hidden  lg:flex-row items-center justify-between 2xl:mt-[6rem] lg:mt-[6rem] xl:mt-[6rem] mt-[2rem] mx-[2rem] 2xl:mx-[15rem] lg:mx-[6rem] xl:mx-[8rem]">
         <h1 className="font-bold text-2xl text-[#1C1C1C] text-center ml-0">
@@ -39,7 +43,7 @@ function SaitaCard() {
 
       <div className="flex flex-col lg:flex-row lg:justify-between lg:space-x-8 2xl:px-[8rem] lg:mx-[6rem] xl:mx-[8rem] mx-[2rem]">
         <img
-          src="/card2.png"
+          src={A2}
           alt="fabreco"
           className="rounded-xl 3xl:w-full 3xl:h-full w-full h-full 2xl:w-[30rem] xl:w-[28rem] lg:w-[23rem] lg:mt-[9rem] 2xl:mt-[8rem] mt-[2rem] "
         />
@@ -66,16 +70,12 @@ function SaitaCard() {
         </div>
       </div>
       <div className="mt-[4rem] mx-[2rem] 2xl:mx-[15rem] lg:mt-[8rem] items-center lg:mx-[6rem] xl:mx-[8rem]">
-        <img
-          src="/card3.png"
-          alt="fabreco"
-          className="w-full h-full rounded-3xl"
-        />
+        <img src={A3} alt="fabreco" className="w-full h-full rounded-3xl" />
       </div>
 
       <div className="flex flex-col lg:flex-row lg:justify-between lg:space-x-10 2xl:px-[8rem] lg:mx-[6rem] xl:mx-[8rem] mx-[2rem] mt-[6rem]">
         <img
-          src="/card4.png"
+          src={A4}
           alt="fabreco"
           className="3xl:w-full 3xl:h-full w-full h-full 2xl:w-[30rem] xl:w-[28rem] lg:w-[23rem] lg:mt-[9rem] 2xl:mt-[8rem] mt-[2rem]"
         />
@@ -108,11 +108,7 @@ function SaitaCard() {
       </div>
 
       <div className="mt-[4rem] mx-[2rem] 2xl:mx-[15rem] lg:mt-[8rem] items-center lg:mx-[6rem] xl:mx-[8rem]">
-        <img
-          src="/card5.png"
-          alt="fabreco"
-          className="w-full h-full rounded-3xl"
-        />
+        <img src={A5} alt="fabreco" className="w-full h-full rounded-3xl" />
       </div>
       <div className="flex flex-col lg:flex-row lg:justify-between 2xl:px-[8rem] lg:mx-[6rem] xl:mx-[8rem] mx-[2rem] space-x-10">
         <div className="text-[#1C1C1C] font-medium mt-[6rem] lg:mt-[8rem] 3xl:mt-[12rem] 3xl:space-y-10 2xl:space-y-6 xl:space-y-6 lg:space-y-6 space-y-4">
@@ -141,17 +137,13 @@ function SaitaCard() {
           </div>
         </div>
         <img
-          src="/card4.png"
+          src={A6}
           alt="fabreco"
           className="3xl:w-full 3xl:h-full w-full h-full 2xl:w-[30rem] xl:w-[28rem] lg:w-[23rem] lg:mt-[9rem] 2xl:mt-[8rem] mt-[2rem] "
         />
       </div>
       <div className="mt-[6rem] mx-[2rem] 2xl:mx-[15rem] lg:mt-[8rem] items-center lg:mx-[6rem] xl:mx-[8rem] mb-[6rem] lg:mb-[12rem]">
-        <img
-          src="/card7.png"
-          alt="fabreco"
-          className="w-full h-full rounded-3xl"
-        />
+        <img src={A7} alt="fabreco" className="w-full h-full rounded-3xl" />
       </div>
     </>
   );

@@ -1,3 +1,4 @@
+import gif from "../../components/assets/dsglobal-1.gif";
 function DSGlobal() {
   return (
     <>
@@ -17,11 +18,7 @@ function DSGlobal() {
         </p>
       </div>
       <div className="mt-[4rem] mx-[4rem] lg:mx-[6rem] xl:mx-[8rem] 2xl:mx-[15rem] flex justify-center items-center">
-        <img
-          src="/dsglobal-1.gif"
-          alt="fabreco"
-          className="w-full rounded-3xl"
-        />
+        <img src={gif} alt="fabreco" className="w-full rounded-3xl" />
       </div>
       <div className="flex flex-col lg:flex-row lg:justify-between 2xl:px-[8rem] lg:mx-[6rem] xl:mx-[8rem] mx-[2rem]">
         <div className="text-[#1C1C1C] font-medium mt-[6rem] space-y-10">

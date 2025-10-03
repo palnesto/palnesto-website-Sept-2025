@@ -1,8 +1,6 @@
 import { FC, useRef, useState, useEffect, MutableRefObject } from "react";
 import { mat4, quat, vec2, vec3 } from "gl-matrix";
 
-/* ===================== SHADERS (WebGL2) ===================== */
-
 const discVertShaderSource = `#version 300 es
 uniform mat4 uWorldMatrix;
 uniform mat4 uViewMatrix;
@@ -1278,7 +1276,7 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [] }) => {
       {activeItem && (
         <>
           <h2
-            className={`select-none absolute text-lg lg:text-4xl font-bold left-[1.6em] lg:left-1/3 top-40 lg:top-1/2 transform lg:-translate-x-1/3 -translate-y-1/2 transition-all ${
+            className={`select-none absolute text-lg lg:text-4xl font-extrabold left-[1.6em] lg:left-1/3 top-40 lg:top-1/2 transform lg:-translate-x-1/3 -translate-y-1/2 transition-all ${
               isMoving
                 ? "opacity-0 pointer-events-none"
                 : "opacity-100 pointer-events-auto"

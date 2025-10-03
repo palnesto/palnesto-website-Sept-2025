@@ -1,3 +1,7 @@
+import A1 from "../../components/assets/smart.png";
+import A2 from "../../components/assets//approach.jpg";
+import A3 from "../../components/assets/imges1.jpg";
+import A4 from "../../components/assets/girl.jpg";
 const SmartInternz = () => {
   return (
     <>
@@ -25,7 +29,7 @@ const SmartInternz = () => {
         </p>
       </div>
       <div className="mt-[4rem] mx-[2rem] 2xl:mx-[15rem] items-center lg:mx-[6rem] xl:mx-[8rem]">
-        <img src="/smart.png" alt="fabreco" className="rounded-3xl" />
+        <img src={A1} alt="fabreco" className="rounded-3xl" />
       </div>
       <div className="flex flex-col lg:flex-row lg:justify-between 2xl:px-[8rem] lg:mx-[6rem] xl:mx-[8rem] mx-[2rem]">
         <div className="text-[#1C1C1C] font-medium mt-[6rem] space-y-10">
@@ -61,14 +65,6 @@ const SmartInternz = () => {
       <div className="flex flex-col lg:flex-row  2xl:px-[8rem] lg:mx-[6rem] xl:mx-[8rem] mx-[2rem]">
         <div className="text-[#1C1C1C] font-medium mt-[6rem] ">
           <p className="text-[#1C1C1C] font-bold text-2xl">THE SOLUTION</p>
-          {/* <h1 className="mt-8 text-lg">
-            <span className="font-bold">NEED: </span>
-            Fabreco focuses on items that save time and are easy to use. An
-            instant wrinkle remover developed by Fabreco eliminates wrinkles
-            without the need for iron in just a few seconds. It was the goal of
-            the founders to create a brand that connects with people and
-            supports them in their daily lives.
-          </h1> */}
           <h1 className="mt-4 text-lg">
             <span className="font-bold">IMPACT: </span>
             Using the previous logo directives, the task at hand was to build on
@@ -80,17 +76,17 @@ const SmartInternz = () => {
 
       <div className="my-[4rem] mx-[2rem] flex flex-col lg:flex-row justify-center items-center lg:space-x-8 lg:px-[20rem] xl:px-[10rem] ">
         <img
-          src="/approach.jpg"
+          src={A2}
           alt="Approach"
           className="transition duration-300 ease-in-out hover:scale-95"
         />
         <img
-          src="/imges1.jpg"
+          src={A3}
           alt="Image 1"
           className="transition duration-300 ease-in-out hover:scale-95"
         />
         <img
-          src="/girl.jpg"
+          src={A4}
           alt="Girl"
           className="transition duration-300 ease-in-out hover:scale-95"
         />

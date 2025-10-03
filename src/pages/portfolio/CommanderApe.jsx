@@ -1,3 +1,10 @@
+import A1 from "../../components/assets/ca1.jpg";
+import A2 from "../../components/assets/ca2.jpg";
+import A3 from "../../components/assets/ca3.jpg";
+import A4 from "../../components/assets/ca4.jpg";
+import A5 from "../../components/assets/ca5.jpg";
+import A6 from "../../components/assets/ca6.jpg";
+import A7 from "../../components/assets/ca7.jpg";
 function Nigecoin() {
   return (
     <>
@@ -21,7 +28,7 @@ function Nigecoin() {
       </div>
       <div className="mt-[4rem] mx-[2rem] 2xl:mx-[15rem]  items-center lg:mx-[6rem] xl:mx-[8rem]">
         <img
-          src="/ca1.jpg"
+          src={A1}
           alt="fabreco"
           className="w-full h-full rounded-xl lg:rounded-3xl"
         />
@@ -41,7 +48,7 @@ function Nigecoin() {
 
       <div className="flex flex-col lg:flex-row lg:justify-between items-center space-y-4 lg:space-x-8 2xl:px-[8rem] lg:mx-[6rem] xl:mx-[8rem] mx-[2rem]  mt-[6rem] lg:mt-[8rem] 3xl:mt-[12rem]">
         <img
-          src="/ca2.jpg"
+          src={A2}
           alt="fabreco"
           className="rounded-xl lg:w-1/2 w-full h-full"
         />
@@ -76,7 +83,7 @@ function Nigecoin() {
       </div>
       <div className="mt-[4rem] mx-[2rem] 2xl:mx-[15rem] lg:mt-[8rem] items-center lg:mx-[6rem] xl:mx-[8rem]">
         <img
-          src="/ca3.jpg"
+          src={A3}
           alt="fabreco"
           className="w-full h-full rounded-xl lg:rounded-3xl"
         />
@@ -84,7 +91,7 @@ function Nigecoin() {
 
       <div className="flex flex-col lg:flex-row lg:justify-between items-center space-y-7 lg:space-x-10 2xl:px-[8rem] lg:mx-[6rem] xl:mx-[8rem] mx-[2rem]  mt-[6rem] lg:mt-[8rem]">
         <img
-          src="/ca4.jpg"
+          src={A4}
           alt="fabreco"
           className=" lg:w-1/2 w-full h-full rounded-xl lg:rounded-3xl"
         />
@@ -117,7 +124,7 @@ function Nigecoin() {
 
       <div className="mt-[4rem] mx-[2rem] 2xl:mx-[15rem] lg:mt-[8rem] items-center lg:mx-[6rem] xl:mx-[8rem]">
         <img
-          src="/ca5.jpg"
+          src={A5}
           alt="fabreco"
           className="w-full h-full rounded-xl lg:rounded-3xl"
         />
@@ -151,23 +158,19 @@ function Nigecoin() {
             </p>
           </div>
           <img
-            src="/ca6.jpg"
+            src={A6}
             alt="fabreco"
             className="lg:w-1/2 w-full h-full rounded-xl lg:rounded-3xl lg:hidden"
           />
         </div>
         <img
-          src="/ca6.jpg"
+          src={A6}
           alt="fabreco"
           className="lg:w-1/2 w-full h-full rounded-xl lg:rounded-3xl hidden lg:block"
         />
       </div>
       <div className="mt-[6rem] mx-[2rem] 2xl:mx-[15rem] lg:mt-[8rem] items-center lg:mx-[6rem] xl:mx-[8rem] mb-[6rem] lg:mb-[12rem]">
-        <img
-          src="/ca7.jpg"
-          alt="fabreco"
-          className="w-full h-full rounded-3xl"
-        />
+        <img src={A7} alt="fabreco" className="w-full h-full rounded-3xl" />
       </div>
     </>
   );
