@@ -2673,7 +2673,7 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [] }) => {
             className={`absolute left-1/2 z-10 w-[60px] h-[60px] grid place-items-center bg-[#00ffff] border-[5px] border-black rounded-full cursor-pointer transition-all ${
               isMoving
                 ? "bottom-[-80px] opacity-0 pointer-events-none scale-0 -translate-x-1/2"
-                : "bottom-[3.8em] opacity-100 pointer-events-auto scale-100 -translate-x-1/2"
+                : "bottom-[4.8em] opacity-100 pointer-events-auto scale-100 -translate-x-1/2"
             }`}
             aria-label="Open project"
             title="Open"
