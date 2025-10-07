@@ -8,7 +8,7 @@ function MemoPortfolio() {
   };
 
   return (
-    <div className="bg-black text-white 2xl:pt-[10rem] pt-[2rem] 2xl:px-[15rem] px-4">
+    <div className="bg-black text-white 2xl:pt-[5rem] pt-[2rem] 2xl:px-[15rem] px-4">
       <div className="flex items-end justify-between ">
         <div className="text-xl md:text-5xl lg:text-7xl font-customLight tracking-widest w-full">
           <h1> LAUNCHING </h1>
