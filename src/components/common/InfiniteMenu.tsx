@@ -1199,21 +1199,6 @@ const defaultItems: MenuItem[] = [
     title: "Axis Solar",
     description: "UI / Branding",
   },
-  {
-    mediaType: "gif",
-    src: "/assets/anim.gif",
-    link: "/",
-    title: "Animated GIF",
-    description: "Loops nicely",
-  },
-  {
-    mediaType: "video",
-    src: "/assets/teaser.mp4",
-    poster: "/assets/teaser.jpg",
-    link: "/",
-    title: "Showreel",
-    description: "Tap to play",
-  },
 ];
 
 interface InfiniteMenuProps {
@@ -1276,7 +1261,7 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [] }) => {
       {activeItem && (
         <>
           <h2
-            className={`select-none absolute text-lg lg:text-4xl font-extrabold left-[1.6em] lg:left-1/3 top-40 lg:top-1/2 transform lg:-translate-x-1/3 -translate-y-1/2 transition-all ${
+            className={`select-none absolute text-3xl lg:text-4xl font-heading-font left-[1.6em] lg:left-1/3 bottom-0 lg:bottom-1/2 transform lg:-translate-x-1/3 translate-y-1/2 transition-all ${
               isMoving
                 ? "opacity-0 pointer-events-none"
                 : "opacity-100 pointer-events-auto"
@@ -1284,15 +1269,15 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [] }) => {
           >
             {activeItem.title}
           </h2>
-          <p
-            className={`select-none absolute max-w-[10ch] text-sm top-40 lg:top-1/2 right-0 transition-all ${
+          {/* <p
+            className={`select-none absolute max-w-[10ch] text-sm bottom-0 lg:top-1/2 right-10 transition-all ${
               isMoving
-                ? "opacity-0 pointer-events-none translate-x-[-60%] -translate-y-1/2"
-                : "opacity-100 pointer-events-auto translate-x-[-90%] -translate-y-1/2"
+                ? "opacity-0 pointer-events-none translate-x-[-60%] lg:-translate-y-1/2"
+                : "opacity-100 pointer-events-auto translate-x-[-90%] lg:-translate-y-1/2"
             }`}
           >
             {activeItem.description}
-          </p>
+          </p> */}
           <div
             onClick={handleButtonClick}
             className={`absolute left-1/2 z-10 w-[60px] h-[60px] grid place-items-center bg-[#00ffff] border-[5px] border-black rounded-full cursor-pointer transition-all ${
