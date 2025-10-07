@@ -8,7 +8,7 @@ import A7 from "../../components/assets/ca7.jpg";
 function Nigecoin() {
   return (
     <>
-      <div className="flex flex-col lg:flex-row items-center justify-between mt-[4rem] 2xl:pt-[8rem]  2xl:px-[15rem] lg:pt-[6rem] xl:pt-[6rem]  2xl:mx-[1rem] lg:mx-[10rem] xl:mx-[10rem] pt-[2rem] mx-[0rem]">
+      <div className="flex flex-col lg:flex-row items-center justify-between 2xl:pt-[8rem]  2xl:px-[15rem] lg:pt-[6rem] xl:pt-[6rem]  2xl:mx-[1rem] lg:mx-[10rem] xl:mx-[10rem] pt-[2rem] mx-[0rem]">
         <h1 className="font-bold text-2xl lg:text-7xl max-w-2xl text-[#1C1C1C]">
           Commander Ape Coin
         </h1>
@@ -38,11 +38,11 @@ function Nigecoin() {
           THE CLIENT
         </h1>
         <p className="text-[#1C1C1C] font-normal 3xl:w-[1000px] 2xl:w-[800px] xl:w-[800px] lg:w-[900px] mt-6 text-lg">
-          Nigecoin is a Web3-powered employment platform dedicated to tackling
-          unemployment in Africa by connecting job seekers with opportunities in
-          the decentralized economy. The platform allows users to find jobs,
-          receive payments in NIGE tokens, and leverage blockchain transparency
-          for fair work.
+          Commander Ape Coin (CAC) is more than just a meme coin—it’s a
+          movement, a battle cry, and a force to be reckoned with in the crypto
+          world. Fueled by a strong community known as the Ape Alliance, CAC
+          combines humor with serious cryptocurrency innovation, creating an
+          unstoppable force in the meme coin space.
         </p>
       </div>
 

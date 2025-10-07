@@ -32,7 +32,6 @@ const Solving: React.FC<NextSectionProps> = ({ id = "after-main" }) => {
       const p = clamp01(raw);
       setProgress(p);
 
-      // When spacing fully open → wait 2s → show pills/icons
       if (p >= 1) {
         if (!showPills && !timerRef.current) {
           timerRef.current = window.setTimeout(() => {
@@ -94,7 +93,7 @@ const Solving: React.FC<NextSectionProps> = ({ id = "after-main" }) => {
         <header className="leading-5">
           Pal <br /> Nesto
         </header>
-        <header>Works</header>
+        <a href="/portfolio">Our Works</a>
       </nav>
       <div className="flex justify-center pt-32 text-2xl leading-3 font-bold">
         <div

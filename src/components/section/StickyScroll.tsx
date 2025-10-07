@@ -8,7 +8,6 @@ const content = [
     description:
       "From UI/UX to product ideation, we create intuitive experiences and test them in the market to ensure they connect with your audience.",
     content: (
-      // <CompareDemo />,
       <>
         <div className="h-96">
           <video

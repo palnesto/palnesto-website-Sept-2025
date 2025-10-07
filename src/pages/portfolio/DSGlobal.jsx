@@ -2,7 +2,7 @@ import gif from "../../components/assets/dsglobal-1.gif";
 function DSGlobal() {
   return (
     <>
-      <div className="flex flex-col lg:flex-row items-center justify-between mt-[4rem] 2xl:pt-[8rem]  2xl:px-[15rem] lg:pt-[6rem] xl:pt-[6rem]  2xl:mx-[1rem] lg:mx-[10rem] xl:mx-[10rem] pt-[2rem] mx-[0rem]">
+      <div className="flex flex-col lg:flex-row items-center justify-between 2xl:pt-[8rem]  2xl:px-[15rem] lg:pt-[6rem] xl:pt-[6rem]  2xl:mx-[1rem] lg:mx-[10rem] xl:mx-[10rem] pt-[2rem] mx-[0rem]">
         <h1 className="font-bold text-2xl lg:text-7xl tracking-wider text-[#1C1C1C]">
           D&S Global Solutions
         </h1>

@@ -1267,11 +1267,11 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [] }) => {
   };
 
   return (
-    <div className="relative w-full h-[100svh] text-white">
+    <div className="relative w-full text-white">
       <canvas
         id="infinite-grid-menu-canvas"
         ref={canvasRef}
-        className="cursor-grab w-full h-full overflow-hidden relative outline-none active:cursor-grabbing"
+        className="cursor-grab w-full h-[80svh] overflow-hidden relative outline-none active:cursor-grabbing"
       />
       {activeItem && (
         <>
