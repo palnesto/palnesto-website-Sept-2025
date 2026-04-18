@@ -6,10 +6,13 @@ import main from "../components/assets/main.mp4";
 import AutoScrollVideo from "../components/section/AutoScrollVideo";
 import Solving from "../components/section/Solving";
 import { StickyScrollRevealDemo } from "../components/section/StickyScroll";
-import Footer from "../components/section/Footer";
-
+import wp from "../components/assets/whatsapp.png";
 import InfiniteMenu from "../components/common/InfiniteMenu";
 import { items } from "../components/types";
+import CareerSection from "../components/section/Career";
+import Footer from "../components/common/Footer";
+import { GoogleGeminiEffectDemo } from "../components/section/GeminiEffect";
+import Team from "../components/section/Team";
 
 const Main = () => {
   const { scrollYProgress } = useScroll();
@@ -77,9 +80,9 @@ const Main = () => {
       </AnimatePresence>
 
       {!showVideo && (
-        <main className="relative min-h-screen font-mono">
+        <main className="relative min-h-screen">
           <nav
-            className="flex items-center justify-between p-4 md:p-7 text-2xl font-extrabold lg:hidden"
+            className="flex items-center justify-between p-4 md:p-7 md:text-2xl font-bold lg:hidden"
             style={{
               position: "fixed",
               top: 0,
@@ -93,11 +96,20 @@ const Main = () => {
             <header className="leading-5">
               Pal <br /> Nesto
             </header>
-            <a href="/portfolio">Our Works</a>
+            <header className="space-x-4">
+              <a
+                href="http://beglitched.club/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Glitch by Palnesto
+              </a>
+              <a href="/portfolio">Our Works</a>
+            </header>
           </nav>
           <motion.div
             id="scroll-indicator"
-            className="top-14 lg:top-0"
+            className="top-14 lg:top-0 font-mono"
             style={{
               scaleX: scrollYProgress,
               position: "fixed",
@@ -109,7 +121,7 @@ const Main = () => {
               backgroundColor: "#FFC100",
             }}
           />
-          <main className="min-h-screen overflow-hidden font-mono pt-[40px] lg:pt-0">
+          <main className="min-h-screen font-mono pt-[40px] lg:pt-0">
             <MagicBento
               textAutoHide={true}
               enableStars={true}
@@ -137,8 +149,7 @@ const Main = () => {
             >
               <StickyScrollRevealDemo />
             </section>
-            <section className="h-[100vh] bg-black">
-              {/* <div
+            {/* <div
                 style={{ width: "100%", height: "600px", position: "absolute" }}
               >
                 <Galaxy />
@@ -155,9 +166,21 @@ const Main = () => {
                   hueShift={240}
                 />
               </div> */}
-              <InfiniteMenu items={items} />
-            </section>
+            <InfiniteMenu items={items} />
+            <Team />
+            <CareerSection />
+            <GoogleGeminiEffectDemo />
             <Footer />
+            {/* whatapp icon for help desk */}
+            <section className="fixed bottom-0 right-0 z-50 flex items-center justify-center w-28 h-28">
+              <a
+                href="https://wa.me/918886911466"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={wp} alt="whatsapp" />
+              </a>
+            </section>
           </main>
         </main>
       )}

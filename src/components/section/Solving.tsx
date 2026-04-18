@@ -84,18 +84,23 @@ const Solving: React.FC<NextSectionProps> = ({ id = "after-main" }) => {
   }, []);
 
   return (
-    <section id={id} ref={sectionRef} className="min-h-screen font-mono">
+    <section id={id} ref={sectionRef} className="min-h-screen">
       <nav
         className={`${
           isSticky ? "fixed top-0 left-0 right-0" : ""
-        } z-50 bg-white lg:flex items-center justify-between p-4 md:p-7 text-2xl font-extrabold hidden`}
+        } z-50 bg-white lg:flex items-center justify-between p-4 md:p-7 text-3xl font-bold hidden`}
       >
         <header className="leading-5">
           Pal <br /> Nesto
         </header>
-        <a href="/portfolio">Our Works</a>
+        <header className="space-x-10">
+          <a href="http://beglitched.club/" target="_blank" rel="noreferrer">
+            Glitch by Palnesto
+          </a>
+          <a href="/portfolio">Our Works</a>
+        </header>
       </nav>
-      <div className="flex justify-center pt-32 text-2xl leading-3 font-bold">
+      <div className="flex justify-center pt-32 text-2xl leading-3 font-bold font-mono">
         <div
           style={{ rowGap: gapPx }}
           className="flex flex-col items-center transition-[row-gap] duration-150"

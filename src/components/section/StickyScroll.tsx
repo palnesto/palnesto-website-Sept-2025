@@ -9,10 +9,10 @@ const content = [
       "From UI/UX to product ideation, we create intuitive experiences and test them in the market to ensure they connect with your audience.",
     content: (
       <>
-        <div className="h-96">
+        <div className="h-72 xl:h-96">
           <video
             key={"0"}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-contain"
             playsInline
             autoPlay
             muted
@@ -32,10 +32,10 @@ const content = [
       "Wireframes to full-stack — backend, frontend, and scalable flows. We build resilient, high-performing products ready for the onchain world",
     content: (
       <>
-        <div className="h-96">
+        <div className="h-72 xl:h-96">
           <video
             key={"1"}
-            className="h-full w-full object-fill"
+            className="h-full w-full object-contain"
             playsInline
             autoPlay
             muted
@@ -55,10 +55,10 @@ const content = [
       "From A/B testing to PR, social media, and live events — we accelerate adoption with strategies that reach the right users at the right time.",
     content: (
       <>
-        <div className="h-96 ">
+        <div className="h-72 xl:h-96 ">
           <video
             key={"2"}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-contain"
             playsInline
             autoPlay
             muted
