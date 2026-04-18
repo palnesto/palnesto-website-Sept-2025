@@ -167,8 +167,8 @@ const Main = () => {
                 />
               </div> */}
             <InfiniteMenu items={items} />
-            <Team />
-            <CareerSection />
+            {/* <Team />
+            <CareerSection /> */}
             <GoogleGeminiEffectDemo />
             <Footer />
             {/* whatapp icon for help desk */}

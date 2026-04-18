@@ -56,14 +56,14 @@ const Footer = () => {
               ©Palnesto {currentYear} All Rights Reserved{" "}
             </p>
             <a
-              href="/Policy"
+              href="/privacy-policy"
               target="_blank"
               className="cursor-pointer whitespace-nowrap"
             >
               Privacy Policy
             </a>
             <a
-              href="/TermsConditions"
+              href="/terms-conditions"
               target="_blank"
               className="cursor-pointer whitespace-nowrap"
             >
@@ -126,7 +126,7 @@ const Footer = () => {
             </a>
           </div>{" "}
           <a
-            href="/Policy"
+            href="/privacy-policy"
             target="_blank"
             className="cursor-pointer whitespace-nowrap text-lg font-medium mt-[4rem]"
           >
@@ -134,20 +134,13 @@ const Footer = () => {
           </a>
           <div className="mt-2 flex flex-row justify-center space-x-8 text-lg font-medium">
             <a
-              href="/TermsConditions"
+              href="/terms-conditions"
               target="_blank"
               className="cursor-pointer whitespace-nowrap"
             >
-              Terms of Use
+              Terms and Conditions
             </a>
-            <a
-              href="/RefundPolicy"
-              target="_blank"
-              className="cursor-pointer whitespace-nowrap"
-            >
-              {" "}
-              Refund Policy
-            </a>
+             
           </div>
           <h1 className="text-lg font-medium mt-2 pb-8">
             ©Palnesto {currentYear} All Rights Reserved{" "}
@@ -210,25 +203,18 @@ const Footer = () => {
               </h1>
               <div className="2xl:space-x-6 3xl:space-x-12 xl:space-x-4 md:space-x-4">
                 <a
-                  href="/Policy"
+                  href="/privacy-policy"
                   target="_blank"
                   className="cursor-pointer whitespace-nowrap"
                 >
                   Privacy Policy
-                </a>
+                </a> 
                 <a
-                  href="/RefundPolicy"
+                  href="/terms-conditions"
                   target="_blank"
                   className="cursor-pointer whitespace-nowrap"
                 >
-                  Refund Policy
-                </a>
-                <a
-                  href="/TermsConditions"
-                  target="_blank"
-                  className="cursor-pointer whitespace-nowrap"
-                >
-                  Terms of Use
+                  Terms and Conditions
                 </a>
               </div>
             </div>
@@ -290,25 +276,17 @@ const Footer = () => {
               </a>
             </div>
 
-            <a href="/Policy" className="text-lg font-medium mt-[4rem]">
+            <a href="/privacy-policy" className="text-lg font-medium mt-[4rem]">
               Privacy Policy
             </a>
             <div className="mt-2 flex flex-row justify-center space-x-8 text-lg font-medium">
               <a
-                href="/TermsConditions"
+                href="/terms-conditions"
                 target="_blank"
                 className="cursor-pointer whitespace-nowrap"
               >
-                Terms of Use
-              </a>
-
-              <a
-                href="/RefundPolicy"
-                target="_blank"
-                className="cursor-pointer whitespace-nowrap"
-              >
-                Refund Policy
-              </a>
+                Terms and Conditions
+              </a> 
             </div>
             <p className="text-lg font-medium mt-2 pb-8">
               ©Palnesto {currentYear} All Rights Reserved
